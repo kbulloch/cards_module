@@ -1,0 +1,50 @@
+<?php
+function cards_menu() {
+    $items = array();
+    $items['cards'] = array(
+        'title' => 'Cards For Friends',
+        'page callback' => 'friends_cards',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+
+    $items['cards/john'] = array(
+        'title' => 'Card for John',
+        'page callback' => 'john_card',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+
+    $items['cards/tom'] = array(
+        'title' => 'Card for Tom',
+        'page callback' => 'tom_card',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+
+    $items['cards/brett'] = array(
+        'title' => 'Card for Brett',
+        'page callback' => 'brett_card',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+
+
+    return $items;
+}
+
+function friends_cards() {
+    return "<p>Greeting cards for buddies</p>";
+}
+
+function john_card() {
+    return "<p>Hello Beardley my old friend</p>";
+}
+
+function tom_card() {
+    return "<p>This is Major Tom.  You have entered the danger zone.</p>";
+}
+
+function brett_card() {
+    return "<p>Dear Slime Champion, I am coming for you.  I will be the very best.</p>";
+}

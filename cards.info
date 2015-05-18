@@ -1,0 +1,5 @@
+name = Cards
+description = Display unique greeting cards for friends.
+package = Custom Modules
+core = 7.x
+files[] = cards.module
